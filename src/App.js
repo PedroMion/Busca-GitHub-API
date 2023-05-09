@@ -1,24 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import {Form} from './components/Form.js';
+import Div100vh from 'react-div-100vh'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Div100vh className="container">
+      <Form />;
+    </Div100vh>
   );
 }
 

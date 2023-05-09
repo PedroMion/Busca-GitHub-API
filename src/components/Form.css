@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-radius: 2.5rem;
+}
+
+.form {
+    width: 97%;
+    height: 60%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 5.2rem;
+}
+
+.buttonArea {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'poppins', 'sans-serif';
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.text {
+    font-family: 'poppins', 'sans-serif';
+    font-size: 1.4rem;
+}
+
+.input {
+    width: 70%;
+    height: 2.7rem;
+    border-radius: 1.2rem;
+    border: 1px solid black;
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: all ease 0.5s;
+    background: 	#D3D3D3;
+}
+
+.input:hover {
+    transform: scale(1.02);
+}
+
+.input:focus {
+    border: 2px solid black;
+}
+
+.button {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    color: #F0F0F0;
+    background: #010101;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    border: none;
+}
+
+.button:hover {
+    transform: scale(1.10);
+    background: #F0F0F0;
+    color: #010101;
+    border: 1px solid black;
+}
