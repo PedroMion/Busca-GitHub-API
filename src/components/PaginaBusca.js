@@ -1,8 +1,9 @@
-import './Form.css';
+import './PaginaBusca.css';
 import { requestAPI } from '../application/buscaAPI';
 import React, { useState } from "react";
+import Div100vh from 'react-div-100vh'
 
-const Form = () => {
+const PaginaBusca = () => {
     const [valorLido, setValorLista] = useState("");
     const [listaResultado, setListaResultado] = useState([]);
 
@@ -14,10 +15,10 @@ const Form = () => {
 
         console.log(dados);
 
-      }
+    }
 
     return (
-        <div className="container">
+        <Div100vh className="container">
             <div className="main">
                 <p className="title">Busca na API GitHub</p>
                 <form className="form" onSubmit={busca}>
@@ -30,8 +31,8 @@ const Form = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </Div100vh>
     );
 }
 
-export {Form};
+export default PaginaBusca;
