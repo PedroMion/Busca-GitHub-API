@@ -20,16 +20,16 @@ const PaginaBusca = () => {
     }
 
     return (
-        <Div100vh className="container">
-            <div className="main">
-                <p className="title">Busca na API GitHub</p>
-                <form className="form" onSubmit={busca}>
-                    <div className="inputArea">
-                        <p className="text">Insira abaixo o termo a ser pesquisado:</p>
-                        <input className="input" placeholder="Pesquisa" id="objSearch" value={valorLido} onChange={(e) => setValorLido(e.target.value)} />
+        <Div100vh className="containerPB">
+            <div className="mainPB">
+                <p className="titlePB">Busca na API GitHub</p>
+                <form className="formPB" onSubmit={busca}>
+                    <div className="inputAreaPB">
+                        <p className="textPB">Insira abaixo o termo a ser pesquisado:</p>
+                        <input className="inputPB" placeholder="Pesquisa" id="objSearch" value={valorLido} onChange={(e) => setValorLido(e.target.value)} />
                     </div>
-                    <div className="buttonArea">
-                        <button className="button" id="commandButton" action="" type="submit">Pesquisar</button>
+                    <div className="buttonAreaPB">
+                        <button className="buttonPB" id="commandButton" action="" type="submit">Pesquisar</button>
                     </div>
                 </form>
             </div>

@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-.container {
+.containerPB {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
     background-color: #D3D3D3;
 }
 
-.main {
+.mainPB {
     width: 40%;
     height: 60%;
     display: flex;
@@ -25,7 +25,7 @@
     border-radius: 2.5rem;
 }
 
-.form {
+.formPB {
     width: 97%;
     height: 60%;
     padding: 0.5rem;
@@ -35,7 +35,7 @@
     justify-content: space-around;
 }
 
-.inputArea {
+.inputAreaPB {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
     height: 5.2rem;
 }
 
-.buttonArea {
+.buttonAreaPB {
     margin-top: 3rem;
     width: 100%;
     display: flex;
@@ -52,19 +52,19 @@
     justify-content: center;
 }
 
-.title {
+.titlePB {
     font-family: 'poppins', 'sans-serif';
     font-size: 2.8rem;
     font-weight: 600;
     text-align: center;
 }
 
-.text {
+.textPB {
     font-family: 'poppins', 'sans-serif';
     font-size: 1.4rem;
 }
 
-.input {
+.inputPB {
     width: 70%;
     height: 2.7rem;
     border-radius: 1.2rem;
@@ -75,15 +75,15 @@
     background: 	#D3D3D3;
 }
 
-.input:hover {
+.inputPB:hover {
     transform: scale(1.02);
 }
 
-.input:focus {
+.inputPB:focus {
     border: 2px solid black;
 }
 
-.button {
+.buttonPB {
     height: 3rem;
     width: 10rem;
     border-radius: 2rem;
@@ -95,7 +95,7 @@
     border: none;
 }
 
-.button:hover {
+.buttonPB:hover {
     transform: scale(1.10);
     background: #F0F0F0;
     color: #010101;
