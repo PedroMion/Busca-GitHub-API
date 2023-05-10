@@ -15,6 +15,17 @@
     min-height: 100vh;
 }
 
+.headerRes {
+    width: 100%;
+    height: 3rem;
+    background-color: #F0F0F0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
 .mainRes {
     width: 60%;
     display: flex;
@@ -24,6 +35,7 @@
     background-color: #F0F0F0;
     border-radius: 2.5rem;
     padding: 3rem 1rem 3rem 1rem;
+    margin-top: 5rem;
 }
 
 .titleRes {
@@ -43,4 +55,21 @@
 
 .repoTextRes {
     font-size: 1.15rem;
+}
+
+.buttonRes {
+    margin-left: 2rem;
+    border-radius: 2.5rem;
+    width: 7rem;
+    height: 2.8rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all ease 0.5s;
+}
+
+.buttonRes:hover {
+    transform: scale(1.05);
+    background: #010101;
+    color: #F0F0F0;
 }
