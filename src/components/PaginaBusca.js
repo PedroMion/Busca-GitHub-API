@@ -1,19 +1,21 @@
+import { useNavigate } from 'react-router-dom';
 import './PaginaBusca.css';
+import Div100vh from 'react-div-100vh'
 import { requestAPI } from '../application/buscaAPI';
 import React, { useState } from "react";
-import Div100vh from 'react-div-100vh'
 
 const PaginaBusca = () => {
-    const [valorLido, setValorLista] = useState("");
-    const [listaResultado, setListaResultado] = useState([]);
+    const [valorLido, setValorLido] = useState("");
+    const historico = useNavigate();
 
     async function busca(e) {
         e.preventDefault();
 
         const dados = await requestAPI(valorLido);
-        setListaResultado(dados);
 
         console.log(dados);
+
+        historico("/resultado", { state: { listaResultado: dados, valorLido: valorLido } });
 
     }
 
@@ -24,7 +26,7 @@ const PaginaBusca = () => {
                 <form className="form" onSubmit={busca}>
                     <div className="inputArea">
                         <p className="text">Insira abaixo o termo a ser pesquisado:</p>
-                        <input className="input" placeholder="Pesquisa" id="objSearch" value={valorLido} onChange={(e) => setValorLista(e.target.value)} />
+                        <input className="input" placeholder="Pesquisa" id="objSearch" value={valorLido} onChange={(e) => setValorLido(e.target.value)} />
                     </div>
                     <div className="buttonArea">
                         <button className="button" id="commandButton" action="" type="submit">Pesquisar</button>

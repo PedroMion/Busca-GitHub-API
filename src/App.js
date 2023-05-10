@@ -1,9 +1,7 @@
 import './App.css';
-import React from 'react';
 import PaginaBusca from './components/PaginaBusca';
 import Resultado from './components/Resultado'
-import Div100vh from 'react-div-100vh'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
   return (
