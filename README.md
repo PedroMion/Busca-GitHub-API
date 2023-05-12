@@ -2,7 +2,7 @@
 
 Este projeto realiza buscas na API do Github e retorna os resultados em ordem decrescente de estrelas.
 
-Link para aplicação hospedada: busca-githubapi.netlify.app
+Para aplicação hospedade, clique [aqui](https://busca-githubapi.netlify.app)
 
 ## 📖 Sobre este projeto
 
