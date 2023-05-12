@@ -13,8 +13,6 @@ const PaginaBusca = () => {
 
         const dados = await requestAPI(valorLido);
 
-        console.log(dados);
-
         historico("/resultado", { state: { listaResultado: dados, valorLido: valorLido } });
 
     }

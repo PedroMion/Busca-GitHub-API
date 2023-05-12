@@ -6,7 +6,6 @@
 }
 
 .containerRes {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,6 +68,28 @@
 }
 
 .buttonRes:hover {
+    transform: scale(1.05);
+    background: #010101;
+    color: #F0F0F0;
+}
+
+.paginationRes {
+    margin-top: 1rem;
+}
+
+.buttonPaginationRes {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid black;
+    background-color: #F0F0F0;
+    color: #010101;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    transition: all ease 0.5s;
+}
+
+.buttonPaginationRes:hover {
     transform: scale(1.05);
     background: #010101;
     color: #F0F0F0;
